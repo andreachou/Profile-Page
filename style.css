@@ -16,6 +16,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 5px;
+    width
 }
 
 .nav-bar h1 {
@@ -27,7 +28,7 @@ body {
 }
 
 .nav {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -42,7 +43,8 @@ body {
 
 li {
     margin: 10px;
-    list-style-type: none; /* remove bullet points */
+    list-style-type: none;
+    /* remove bullet points */
 }
 
 .active {
@@ -67,15 +69,23 @@ li {
 
 
 
-.main-content{
-    display:flex;
+.main-content {
+    display: flex;
     margin: 10px auto;
     justify-content: center;
 }
 
+
+
 .left-side-bar,
 .right-side-bar {
     margin: 50px;
+}
+
+
+/* better use display:flex and flex to size left and right columns. */
+.left-side-bar {
+    width: 600px;
 }
 
 .main-profile,
@@ -86,7 +96,6 @@ li {
 }
 
 .main-profile {
-    width: 600px;
     margin-bottom: 30px;
 }
 
@@ -99,16 +108,16 @@ li {
 /* cannot center the avatar by using this way. Not sure why.
 .profile-header img {
     height:100px;
-    position: relative;
-    top: 50px;
     padding-left: 20px;
     background-color: white;
     border: white 2px solid;
     border-radius: 50%;
+    margin-top:50px;
+    margin-left:20px;
 } */
 
 /* set the picture as background, centered*/
-.avatar{
+.avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -119,7 +128,7 @@ li {
     position: relative;
     top: 50px;
     margin-left: 20px;
-    border:white 4px solid;
+    border: white 4px solid;
 }
 
 
@@ -162,15 +171,23 @@ li {
     padding: 10px;
 }
 
-.education-body{
+.education-body {
     padding: 20px;
-    height:500px;
+    height: 500px;
 }
 
-.date{
-    color:grey;
-    margin:10px 0px;
+.date {
+    color: grey;
+    margin: 10px 0px;
 }
+
+
+footer {
+    width: inherit;
+    border-top: #d3d3d3 3px solid;
+    padding: 10px;
+}
+
 
 
 
@@ -185,7 +202,7 @@ li {
 .request-header,
 .connection-header {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -193,11 +210,15 @@ h3 {
     color: white;
 }
 
-header p {
+#request-count {
     background-color: lightgrey;
     border-radius: 50%;
-    width: 40px;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
     text-align: center;
+    padding: 2px;
+    margin-right:10px;
 }
 
 .request {
@@ -232,7 +253,6 @@ header p {
     background-color: white;
 }
 
-
 .connection {
     display: flex;
     align-items: center;
@@ -243,8 +263,11 @@ header p {
     margin-left: 5px;
 }
 
-footer {
-    width:inherit;
-    border-top: #d3d3d3 3px solid;
-    padding:5px;
+#connection-count {
+    background-color: lightgrey;
+    border-radius: 50%;
+    width: 50px;
+    font-size: 14px;
+    text-align: center;
+    margin-right:10px;
 }
