@@ -5,9 +5,72 @@
 }
 
 body {
-    margin: 20px;
     font-family: 'Roboto', sans-serif;
+}
+
+
+
+.nav-bar {
+    background-color: black;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-bar h1 {
+    font-size: 40px;
+    color: white;
+    font-family: arial;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.nav {
+    display:flex;
+    align-items: center;
+}
+
+.nav-links {
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+li {
+    margin: 10px;
+    list-style-type: none; /* remove bullet points */
+}
+
+.active {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgb(1, 204, 204);
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    box-shadow: 3px 3px black;
+    border: 3px black solid;
+
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.main-content{
+    display:flex;
+    margin: 10px auto;
+    justify-content: center;
 }
 
 .left-side-bar,
